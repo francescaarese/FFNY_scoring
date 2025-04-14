@@ -55,7 +55,7 @@ st.sidebar.header("Adjust Weights")
 weights = {
     'VC Score': st.sidebar.slider("VC Score Weight", 0.0, 1.0, 0.20, 0.01),
     'Funding Valuation Score': st.sidebar.slider("Funding Valuation Score Weight", 0.0, 1.0, 0.20, 0.01),
-    'Raised Score': st.sidebar.slider("Raised Score Weight", 0.0, 1.0, 0.14, 0.01),
+    'Raised Score': st.sidebar.slider("Raised Score Weight", 0.0, 1.0, 0.20, 0.01),
     'Recent Financing Score': st.sidebar.slider("Recent Financing Score Weight", 0.0, 1.0, 0.1, 0.01),
     'HQ Location Score': st.sidebar.slider("HQ Location Score Weight", 0.0, 1.0, 0.05, 0.01),
     'Company Growth Score': st.sidebar.slider("Company Growth Score Weight", 0.0, 1.0, 0.20, 0.01),
