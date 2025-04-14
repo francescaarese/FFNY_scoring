@@ -205,8 +205,8 @@ def recent_financing(company, reference_date_str):
 #     return 0
 
 def check_hq_location(company):
-    region = str(company.get('HQ Global Region', '')).strip().lower()
-    country = str(company.get('HQ Country/Territory/Region', '')).strip().lower()
+    region = str(company.get('HQ Global Sub Region', '')).strip().lower()
+    # country = str(company.get('HQ Country/Territory/Region', '')).strip().lower()
 
   
     if region in ['south america','central america']:
@@ -364,3 +364,4 @@ if st.button("Process Data"):
         )
     else:
         st.warning("Please upload both the company data file and the Top VCs file.")
+
