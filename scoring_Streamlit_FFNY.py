@@ -238,24 +238,16 @@ def evaluate_company_growth(row):
     growth = row.get(f'growth to {growth_year}', None)
     if years_in_operation >= 5:
         # Companies 5 years or older
-        if growth >= 1000:
+        if growth >= 500:
             return 10
-        elif growth > 900:
-            return 9
-        elif growth > 800:
-            return 8
-        elif growth > 700:
-            return 7
-        elif growth > 600:
-            return 6
-        elif growth > 500:
-            return 5
         elif growth > 400:
-            return 4
+            return 8
         elif growth > 300:
-            return 3
-        elif growth > 0:
-            return 1
+            return 6
+        elif growth > 200:
+            return 4
+        elif growth > 100:
+            return 2
         else:
             return 0
     else:
@@ -378,3 +370,4 @@ if st.button("Process Data"):
         )
     else:
         st.warning("Please upload both the company data file and the Top VCs file.")
+
