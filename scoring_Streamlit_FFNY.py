@@ -206,7 +206,7 @@ def recent_financing(company, reference_date_str):
     recent_raise = 0
     large_financing = 0
 
-    if pd.notna(last_financing_date) and last_financing_date > reference_date - timedelta(days=730):
+    if pd.notna(last_financing_date) and last_financing_date > reference_date - timedelta(days=365):
         recent_raise = 5
 
         last_financing_size = company.get('Last Financing Size', 0)
