@@ -21,7 +21,7 @@ import io
 
 
 # Title of the app
-st.title("Bloomberg Scoring")
+st.title("FFNY Scoring")
 
 # Instructions
 st.markdown("""
