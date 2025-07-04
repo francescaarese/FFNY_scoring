@@ -280,9 +280,10 @@ def score_emerging_and_verticals(company):
             'space technology',
             'life sciences',
             'nanotechnology',
-            'quantum computing'
-            'autonomous cars'
-            'fusion energy'
+            'quantum computing',
+            'autonomous cars',
+            'fusion energy',
+            'climate tech'
         }
         # Check if any target keyword is present in the verticals
         verticals_score = any(keyword in verticals for keyword in target_keywords)
